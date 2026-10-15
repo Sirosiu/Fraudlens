@@ -19,3 +19,10 @@ node_modules/
 .next/
 .env
 .env.local
+
+# Keep the raw Kaggle dataset private, but allow trained runtime artifacts
+# to be committed when deploying the backend separately.
+!backend/model.joblib
+!backend/data/
+backend/data/*
+!backend/data/stream_sample.csv
